@@ -1,7 +1,20 @@
 <html>
     <head>
-        <link rel="stylesheet" href="./bs.css">
-    </head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+        </style>
+      </head>
     <body>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a href="./index.html" class="navbar-brand"><img src="http://www.greetlabs.com/images/logo.png" alt=""></a>
@@ -34,10 +47,89 @@
 
 
         </nav>
-        <div>
-            <h2>HOME</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="carousel slide" data-rider="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./pexels-emareynares-18387848.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./pexels-jeswin-1607862.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./pexels-julicamph-24536423 (1).jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <footer class="box" style="background-color: darkgray; border-color: darkgray;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="http://www.greetlabs.com/images/logo.png" alt="">
+                        <p>
+                            Over a decade with an industry experience we offer a excess of client centric service by enabling users achieve competitive advantage through lithe and next generation global delivery models.</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Address <BR></BR>
+                            Office: <br>
+                            #96, 3rd Floor,R J Garden, Marathahalli ORR
+                            Bangalore - 560 037 <BR></BR>
+                            Phone: (91) 8660 721 921 <BR>
+                            Land Line: (08) 4370 8244 <BR>
+                            Email: meet@greetlabs.com</p>
+                    </div>
+                    <div class="col-2">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Home</li>
+                            <li>About us </li>
+                            <li>Services</li>
+                            <li>Portfolio</li>
+                            <li>Careers</li>
+                            <li>Hire us </li>
+                            <li>Blog</li>
+                            <li>Contact us</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-4">
+                        <h6><b>Subscribe</b> to Our Newsletter to get Important News. Let's get to know new services.</h6>
+                        <div class="row">
+                            <div class="col10">
+                                <input type="email" placeholder="Enter your email">
+                            </div>
+                            <div class="col2">
+                                <button class="btn-success">subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-6">
+                                <h6>Copyrights © 2018 All Rights Reserved by  Greet labs Pvt Ltd.
+                                    Terms of Use / Privacy Policy / Site Map / Payments</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
+    <script>
+        $('.carousel').carousel({
+  interval: 1000
+})
+    </script>
 
 
 </html>
